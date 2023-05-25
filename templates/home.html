@@ -1,0 +1,47 @@
+{% extends "index.html" %}
+{% block content%}
+<div class="container outform">
+  <div class="Abhyaz Internship">
+
+    <form action="{{ url_for('submit') }}" method="post">
+      <h2>Enter the Visitor Details:</h2>
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input name="visitor_name" type="text" class="form-control" id="name" aria-describedby="nameHelp"
+          placeholder="Name of the Person">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input name="visitor_phone" type="text" class="form-control" id="phone" aria-describedby="nameHelp"
+          placeholder="Phone Number">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email ID</label>
+        <input name="visitor_email" type="text" class="form-control" id="email" aria-describedby="nameHelp"
+          placeholder="Email ID">
+      </div>
+
+      <div class="form-group">
+        <label for="course">Course</label>
+        <input name="visitor_course" type="text" class="form-control" id="course" aria-describedby="nameHelp"
+          placeholder="Opted Course">
+      </div>
+
+      <div class="form-group">
+        <label for="feedback">FeedBack</label>
+        <input name="visitor_feedback" type="text" class="form-control" id="feedback" aria-describedby="nameHelp"
+          placeholder="Give FeedBack Please.">
+      </div>
+
+
+      <br>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
+
+
+{% endblock %}
